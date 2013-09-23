@@ -1,9 +1,9 @@
 map <silent> <Leader>d :call <SID>gitDiff()<CR>
 
 hi SignColumn guifg=#7c7c7c guibg=#000000 gui=NONE
-hi scmLineAdded guifg=#65b042
-hi scmLineChanged guifg=#3387cc
-hi scmLineRemoved guifg=#ff0000
+hi scmLineAdded guifg=#65b042 ctermfg=77
+hi scmLineChanged guifg=#3387cc ctermfg=63
+hi scmLineRemoved guifg=#ff0000 ctermfg=202
 
 if !exists("g:git_diff_added_symbol")
   let g:git_diff_added_symbol = '+'
